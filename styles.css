@@ -1,0 +1,31 @@
+#headline{
+    top: 750px;
+    position:absolute;
+    margin:0;
+    font-family: goudy-old-style,serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align:center;
+    line-height: 1.5em;
+}
+#article{
+    top:900px;
+    position:absolute;
+    margin:0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight:400;
+    font-style:normal;
+    text-align:justify;
+    line-height:1.5em;
+
+}
+
+#textcontainer{
+    height:200vh;
+    width:50vw;
+    left:50%;
+    translate:-50%;
+    position:absolute;
+    margin:0;
+    top:0px;
+}

@@ -1,5 +1,5 @@
 #headline{
-    top: 750px;
+    top: 600px;
     position:absolute;
     margin:0;
     font-family: goudy-old-style,serif;
@@ -9,7 +9,7 @@
     line-height: 1.5em;
 }
 #article{
-    top:900px;
+    top:700px;
     position:absolute;
     margin:0;
     font-family:Georgia, 'Times New Roman', Times, serif;

@@ -65,6 +65,26 @@ function circleOfClocks(r, angle, size){
     let y = r * cos(angle);
     imageMode(CENTER);
     image(clock, x, y, size, size);
+        
+    let clockRadius = size/2;
+    let secondsRadius = clockRadius * 0.8;
+    let minutesRadius = clockRadius * 0.7;
+    let hoursRadius = clockRadius * 0.5;
+    let clockDiameter = clockRadius * 1.7;
+    let s = map(second(), 0, 60, 0, TWO_PI) - HALF_PI;
+    let m = map(minute() + norm(second(), 0, 60), 0, 60, 0, TWO_PI) - HALF_PI;
+    let h = map(hour() + norm(minute(), 0, 60), 0, 24, 0, TWO_PI * 2) - HALF_PI;
+    
+    stroke('red');
+    strokeCap(PROJECT);
+    strokeWeight(size/500);
+    line(x, y, x + cos(s) * secondsRadius, y + sin(s) * secondsRadius);
+    stroke(0);
+    strokeWeight(size/75);
+    line(x, y, x + cos(m) * minutesRadius, y + sin(m) * minutesRadius);
+    strokeWeight(size/75);
+    line(x, y, x + cos(h) * hoursRadius, y + sin(h) * hoursRadius);
+
     angle = angle + TWO_PI/6;
   };
 };

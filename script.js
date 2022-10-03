@@ -10,7 +10,7 @@ function preload() {
 };
 
 function setup() {
-    let cnv = createCanvas(700,700);
+    let cnv = createCanvas(700,466);
     cnv.position(innerWidth/4,0);
     background("black");
     translate(width / 2, height / 2);

@@ -97,7 +97,7 @@ function mouseWheel(event){
     return false;
   }
     else {
-      manScroll = 0;
+      manScroll = 1;
       return true;
     }
 };

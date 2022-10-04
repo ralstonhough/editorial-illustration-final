@@ -9,7 +9,7 @@
     line-height: 1.5em;
 }
 #article{
-    top:675px;
+    top:650px;
     position:absolute;
     margin:0;
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -22,7 +22,7 @@
 
 #textcontainer{
     height:200vh;
-    width:50vw;
+    width:700px;
     left:50%;
     translate:-50%;
     position:absolute;

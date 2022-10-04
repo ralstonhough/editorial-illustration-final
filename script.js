@@ -1,5 +1,6 @@
 let man;
 let clock;
+let cnv;
 let clockScroll = 0;
 let manScroll = 1500;
 let bounceAngle = 0;
@@ -10,8 +11,8 @@ function preload() {
 };
 
 function setup() {
-    let cnv = createCanvas(700,466);
-    cnv.position(innerWidth/4,0);
+    cnv = createCanvas(700,466);
+    centerCanvas();
     background("black");
     translate(width / 2, height / 2);
     image(clock,0,0,10,10);
@@ -100,6 +101,15 @@ function mouseWheel(event){
       manScroll = 1;
       return true;
     }
+};
+
+function windowResized(){
+  centerCanvas();
+};
+
+
+function centerCanvas() {
+  cnv.position((windowWidth - width)/2, 20);
 };
 
 //Sin-based math for floating animation inspired

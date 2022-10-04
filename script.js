@@ -92,12 +92,12 @@ function circleOfClocks(r, angle, size){
 function mouseWheel(event){
   print(event.delta);
   clockScroll += event.delta;
-  if (manScroll > 25){
+  if (manScroll > 1){
     manScroll -= (event.delta);
     return false;
   }
     else {
-      manScroll = 25;
+      manScroll = 1;
       return true;
     }
 };
